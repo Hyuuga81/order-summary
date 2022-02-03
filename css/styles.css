@@ -1,45 +1,28 @@
+/********************** STRUCTURAL STYLES ***********************/
+* {
+    padding: 0;
+    margin: 0;
+}
+
 html {
-    width: 100%;
     font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
 }
 
 body {
-    background: url("../images/pattern-background-mobile.svg") center no-repeat;
-    background-size: cover;
     width: 100%;
+    /* background-color: hsl(225, 100%, 94%); */
+    background: url("../images/pattern-background-mobile.svg");
+    background-size: cover;
     font-size: 1em;
+    font-family: 'Red Hat Display', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
 }
 
-.outer-cover {
-    width: 85%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    padding: 70px 25px;
-}
-
-.top-container {
+main {
     width: 100%;
-    background: url("../images/illustration-hero.svg")center no-repeat;
-    background-size: cover;
-}
-
-.top-container p {
-    padding-bottom: 300px;
-}
-
-.bottom-container {
-    width: 100%;
-    background-color: #f8f9fe;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,18 +35,149 @@ body {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #fff;
 }
 
-.summary {
-    color: #9d9fb4;
+main .container {
+    margin: 70px 0;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.attribution {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+/********************* HERO ***********************/
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: url("../images/illustration-hero.svg") center no-repeat;
+    background-size: cover;
+}
+
+.hero p {
+    /* display: none; */
+    padding-bottom: 160px;
+}
+
+/****************** ORDER SUMMARY ****************/
+
+.order-summary {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 0;
+    margin-top: -32px;
+}
+
+.order-summary .container {
+    /* padding-top: -50px; */
+}
+
+.order-summary h1 {
+    padding-bottom: 30px;
+    font-size: 1.6em;
+}
+
+.order-summary p {
     text-align: center;
+    line-height: 28px;
+    font-size: 1em;
+    color: hsl(224, 23%, 55%);
 }
 
-.summary h1 {
-    color: #55637e;
+/****************** PLAN **************************/
+
+.plan {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: -90px;
 }
 
-.summary p {
-    font-size: 1.125em;
-    line-height: 1.5em;
+.plan-case {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.icon-plan {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-left: 15px;
+}
+
+.annual-plan {
+    margin-left: 20px;
+    font-size: .9em;
+}
+
+.annual-plan .title {
+    font-weight: 700;
+}
+
+.annual-plan .amount {
+    color: hsl(224, 23%, 55%);
+    padding-top: 7px;
+}
+
+.change {
+    margin-right: 18px;
+    font-weight: 500;
+}
+
+
+/************************ PAYMENT **********************/
+
+.proceed {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: -80px;
+    margin-bottom: -30px;
+}
+
+.proceed .container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+button {
+    width: 90%;
+    padding: 20px 0;
+    border-radius: 15px;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    font-weight: 900;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.proceed h2 {
+    font-size: 1em;
+    color: hsl(224, 23%, 55%);
 }
