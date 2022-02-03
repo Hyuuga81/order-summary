@@ -1,4 +1,4 @@
-/********************** STRUCTURAL STYLES ***********************/
+/***************** STRUCTURAL STYLES ***************/
 * {
     padding: 0;
     margin: 0;
@@ -6,11 +6,13 @@
 
 html {
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
     width: 100%;
-    /* background-color: hsl(225, 100%, 94%); */
     background: url("../images/pattern-background-mobile.svg");
     background-size: cover;
     font-size: 1em;
@@ -61,11 +63,11 @@ main .container {
     align-items: center;
     flex-flow: row wrap;
     background: url("../images/illustration-hero.svg") center no-repeat;
-    background-size: cover;
+    background-size: cover; 
 }
 
 .hero p {
-    /* display: none; */
+    visibility:hidden; 
     padding-bottom: 160px;
 }
 
@@ -81,18 +83,16 @@ main .container {
     margin-top: -32px;
 }
 
-.order-summary .container {
-    /* padding-top: -50px; */
-}
-
 .order-summary h1 {
+    width: 100%;
+    text-align: center;
     padding-bottom: 30px;
     font-size: 1.6em;
 }
 
 .order-summary p {
     text-align: center;
-    line-height: 28px;
+    line-height: 30px;
     font-size: 1em;
     color: hsl(224, 23%, 55%);
 }
@@ -105,7 +105,7 @@ main .container {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin-top: -90px;
+    margin-top: -100px;
 }
 
 .plan-case {
@@ -122,7 +122,6 @@ main .container {
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
-    margin-left: 15px;
 }
 
 .annual-plan {
@@ -140,10 +139,9 @@ main .container {
 }
 
 .change {
-    margin-right: 18px;
+    width: 20%;
     font-weight: 500;
 }
-
 
 /************************ PAYMENT **********************/
 
@@ -153,7 +151,7 @@ main .container {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin-top: -80px;
+    margin-top: -100px;
     margin-bottom: -30px;
 }
 
@@ -163,7 +161,6 @@ main .container {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-
 }
 
 button {
@@ -177,7 +174,78 @@ button {
     margin-bottom: 30px;
 }
 
-.proceed h2 {
-    font-size: 1em;
+button:hover {
+    cursor: pointer;
+    background-color: hsl(245, 88%, 68%);
+}
+
+.proceed a {
+    width: 100%;
+    text-align: center;
+    font-size: .85em;
     color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.proceed a:hover {
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
+
+/******************* DESKTOP STYLES ******************/
+
+@media (min-width: 1400px) {
+    body {
+        width: 100%;
+        background: url("../images/pattern-background-desktop.svg");
+        background-size: cover;
+    }
+
+    .container {
+        width: 32%;
+    }
+
+    main .container {
+        margin: 100px 0;
+    }
+
+    /********************* HERO ***********************/
+
+    .hero p {
+        /* display: none; */
+        padding-bottom: 222px;
+    }
+
+    /****************** ORDER SUMMARY ****************/
+
+    .order-summary {
+    margin-top: -42px;
+    }
+
+    .order-summary .container {
+    /* padding-top: -50px; */
+        width: 90%;
+    }
+
+    .order-summary p {
+    width: 70%;
+    line-height: 30px;
+    font-size: 1.15em;
+    }
+    /****************** PLAN **************************/
+
+    .plan .container {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    /********************* PAYMENT ******************/
+
+    .proceed {
+
+    margin-top: -140px;
+    margin-bottom: -35px;
+    }
+
 }
