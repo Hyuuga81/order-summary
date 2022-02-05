@@ -62,8 +62,9 @@ main .container {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background: url("../images/illustration-hero.svg") center no-repeat;
-    background-size: cover; 
+    background: url("../images/illustration-hero.svg") top center no-repeat;
+    background-size: contain;
+    background-color: #e0e8ff;
 }
 
 .hero p {
@@ -198,8 +199,9 @@ button:hover {
 @media (min-width: 1400px) {
     body {
         width: 100%;
-        background: url("../images/pattern-background-desktop.svg");
-        background-size: cover;
+        background: url("../images/pattern-background-desktop.svg") top center no-repeat;
+        background-size: contain;
+        background-color: #e0e8ff;
     }
 
     .container {
