@@ -219,10 +219,27 @@ main {
         font-size: 0.93em;
     }
 
+    .plan a:hover {
+        cursor: pointer;
+        text-decoration: none;
+        color: #766CF1;
+    }
+
+
+
     /************** PAYMENT BUTTONS **************/
 
     .payment-buttons button {
         margin-bottom: 32px;
     }
 
+    .payment-buttons button:hover {
+        background-color: #766CF1;
+        cursor: pointer;
+    }
+
+    .payment-buttons h2:hover {
+        color: #1F2E55;
+        cursor: pointer;
+    }
 }
