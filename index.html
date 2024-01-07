@@ -1,74 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <!-- Fontawesome icons-->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap" rel="stylesheet"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Summary Component</title>
 
   <!-- css link -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  
-  <title>Frontend Mentor | Order summary card</title>
-  
+  <link rel="stylesheet" href="./css/styles.css">
 
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <main>
-    <div class="container">
-      <div class="hero">
-        <p>.</p>
-      </div>
-      <div class="order-summary">
-        <div class="container">
+    <div class="hero">
+      <p>.</p>
+    </div>
+    <div class="lower">
+      <div class="container">
+        <div class="order-summary">
           <h1>Order Summary</h1>
-          <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
-            device anywhere you like!</p>
+          <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
         </div>
-      </div>
-  
-      <div class="plan">
-        <div class="container">
-          <div class="plan-case">
-            <div class="icon-plan">
-              <!-- icon -->
-              <div class="icon">
-                <img src="images/icon-music.svg" alt="icon">
-              </div>
-              <!-- Annual plan and cost: Annual Plan
-              $59.99/year-->
-              <div class="annual-plan">
-                <p class="title">Annual Plan</p>
-                <p class="amount">$59.99/year</p>
-              </div>
-            </div>  <!-- Icon and plan end -->
-            
-            <!-- Change link: Change-->
-            <div class="change">
-              <a href="#">Change</a>
+        <div class="plan">
+          <div class="container">
+            <img src="./images/icon-music.svg" alt="music-note">
+            <div class="annual-plan">
+              <h2>Annual Plan</h2>
+              <p>$59.99/year</p>
             </div>
+            <a href="#">Change</a>
           </div>
         </div>
-      </div>
-  
-      <div class="proceed">
-        <div class="container">
+        <div class="payment-buttons">
           <button>Proceed to Payment</button>
-          <a href="#">Cancel Order</h2>
+          <h2>Cancel Order</h2>
         </div>
       </div>
     </div>
-    
   </main>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Jay Adeyina</a>.
-  </div>
-
 </body>
+
 </html>
