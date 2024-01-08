@@ -194,6 +194,7 @@ main {
 
     /************** PLAN **************/
     .plan {
+        padding: 25px 0;
         margin-bottom: 32px;
     }
 
@@ -231,6 +232,7 @@ main {
 
     .payment-buttons button {
         margin-bottom: 32px;
+        padding: 25px 0;
     }
 
     .payment-buttons button:hover {
