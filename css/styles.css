@@ -170,7 +170,7 @@ main {
     /************** HERO **************/
 
     .hero {
-        padding: 110px 0;
+        padding: 100px 0;
     }
 
     /************** LOWER **************/
@@ -196,7 +196,7 @@ main {
     /************** PLAN **************/
     .plan {
         padding: 25px 0;
-        margin-bottom: 32px;
+        margin-bottom: 24px;
     }
 
     .plan .container {
