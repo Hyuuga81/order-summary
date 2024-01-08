@@ -233,7 +233,7 @@ main {
 
     .payment-buttons button {
         margin-bottom: 32px;
-        padding: 25px 0;
+        padding: 15px 0;
     }
 
     .payment-buttons button:hover {
