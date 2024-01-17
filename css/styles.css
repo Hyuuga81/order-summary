@@ -11,6 +11,7 @@ html {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    box-sizing: border-box;
 }
 
 body {
@@ -37,7 +38,7 @@ main {
     width: 100%;
     background: url('../images/illustration-hero.svg');
     background-size: cover;
-    padding: 80px 0;
+    padding: 70px 0;
 }
 
 /************** LOWER **************/
@@ -99,7 +100,7 @@ main {
 
 .plan {
     background: #F7F9FF;
-    padding: 16px 0;
+    padding: 16.55px 0;
     border-radius: 10px;
     margin-bottom: 24px;
 }
@@ -144,7 +145,7 @@ main {
     width: 100%;
     background: #382AE1;
     color: #fff;
-    padding: 15px 0;
+    padding: 15.8px 0;
     font-size: 1em;
     font-weight: 900;
     border-radius: 10px;
